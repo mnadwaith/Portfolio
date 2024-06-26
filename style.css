@@ -1,3 +1,39 @@
+/* Header CSS */
+
 header{
+    background-color: red;
+}
+
+#name{
     text-align: center;
 }
+
+#nav{
+    text-align: center;
+}
+
+/* About Me CSS */
+
+#me{
+    /* background-color: blue; */
+}
+
+#my_photo{
+    width: 423px;
+    height: 478px;
+    float: left;
+    position: absolute;
+}
+
+#my_photo>img{
+    padding-left: 67px
+}
+
+#about{
+    width: 865px;
+    height: 479px;
+    left: 423px;
+    position: relative;
+}
+
+

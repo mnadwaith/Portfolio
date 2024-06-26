@@ -5,27 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adwaith - Portfolio</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
+        <h1 id="name">Adwaith M Nambiar</h1>
+        <nav id="nav">
             <a href="#me">About</a>
-            <a href="#skils">Skills</a>
             <a href="#profiles">Profiles</a>
+            <a href="#skils">Skills</a>
+            <a href="#projects">Porjects</a>
             <a href="#hobbies">Hobbies</a>
             <a href="#map">Map</a>
         </nav>
     </header>
-    <h1>Adwaith M Nambiar</h1>
-    <img src="my_photo.jpg" alt="An image of myself" width="250px">
+
     <section id="me">
-        <p>Aspiring Final-year Computer Science Engineering student specializing in AI and Robotics. Proficient in
-            C/C++,
-            Java, Python, and front-end technologies. </p>
+        <div id="my_photo">
+            <img src="images/my_photo.jpg" alt="An image of myself" width="250px">
+        </div>
+        <div id="about">
+            <p>As a 4th-year B.Tech student at Vellore Institute of Technology (VIT), specializing in Computer Science
+                and Engineering with a focus on AI and Robotics, I am passionate about creating innovative software
+                solutions, web applications, and intelligent systems. My academic and project experiences have equipped
+                me with a robust foundation in AI, robotics, and a diverse range of programming and development skills.
+
+                I am proficient in several programming languages, including Python, C/C++, and Java, and have developed
+                expertise in web technologies like HTML, CSS, JavaScript, Node.js, and Express.js. My background in
+                machine learning allows me to build models that analyze data and make predictions, contributing to
+                smarter, more efficient applications.
+                I am keen on pursuing a career as a software developer, web developer, or machine learning engineer. My
+                goal is to apply my technical skills to develop cutting-edge applications and intelligent systems that
+                solve real-world problems and enhance user experiences. I am excited to join dynamic teams and work on
+                projects that push the boundaries of technology.
+
+                In my free time, I enjoy listening to music and going to the gym, which helps me stay balanced and
+                energized. Let’s connect to discuss potential collaborations, opportunities, or insights into the
+                exciting fields of software development, web development, and machine learning.</p>
+        </div>
     </section>
     <hr>
+
+    <section id="profiles">
+        <h2>Profiles</h2>
+        <ul>
+            <li><a href="https://github.com/mnadwaith" target="_blank">Github</a></li>
+            <li><a href="https://www.linkedin.com/in/adwaith-m-nambiar-756451227/" target="_blank">LinkedIn</a></li>
+        </ul>
+    </section>
+
     <section id="skills">
         <h2>Skills</h2>
         <ul>
@@ -35,13 +65,34 @@
             <li>CSS</li>
         </ul>
     </section>
-    <section id="profiles">
-        <h2>Profiles</h2>
-        <ul>
-            <li><a href="https://github.com/mnadwaith" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/adwaith-m-nambiar-756451227/" target="_blank">LinkedIn</a></li>
-        </ul>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ol>
+            <li>
+                <h3>Full Stack</h3>
+                <ul>
+                    <li>
+                        <details>
+                            <summary><a href="#">OTT Website</a></summary>
+                            <p>This is a movie streaming website made using MongoDB for database, HTML CSS for
+                                frontend and then later
+                                integrated both frontend and backend using React. </p>
+                        </details>
+                    </li>
+
+                </ul>
+            </li>
+            <li>
+                <h3>Data Science</h3>
+                <ul>
+                    <li>Lead Score</li>
+                    <li>Customer Segmentation</li>
+                </ul>
+            </li>
+        </ol>
     </section>
+
     <section id="hobbies">
         <h2>Hobbies</h2>
         <ul>
@@ -50,9 +101,13 @@
             <li>Coding</li>
         </ul>
     </section>
+
     <section id="map">
         <h2>Map</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d52583.60008594528!2d75.60265827360186!3d11.601986479302905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1714500311882!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d52583.60008594528!2d75.60265827360186!3d11.601986479302905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1714500311882!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 </body>
 
