@@ -1,70 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Adwaith - Portfolio</title>
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1 id="name">Adwaith M Nambiar</h1>
-        <nav id="nav">
-            <a href="#me">About</a>
-            <a href="#profiles">Profiles</a>
-            <a href="#skils">Skills</a>
-            <a href="#projects">Porjects</a>
-            <a href="#hobbies">Hobbies</a>
-            <a href="#map">Map</a>
-        </nav>
-    </header>
+    <div class="container-fluid fixed-top bg-dark-subtle d-none d-lg-block">
+        <header class="d-flex justify-content-center py-3">
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item"><a href="#certification" class="nav-link">Certification</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Porjects</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="container-fluid  bg-dark-subtle d-lg-none">
+        <header class="d-flex justify-content-between align-items-center py-3">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </header>
+    </div>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-house" viewBox="0 0 16 16">
+                            <path
+                                d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                        </svg>
+                        Home</a></li>
+                <li class="nav-item"><a href="#certification" class="nav-link">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-award-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
+                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+                        </svg>
+                        Certification</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Porjects</a></li>
+            </ul>
+        </div>
+    </div>
 
     <section id="me">
-        <div id="my_photo">
-            <img src="images/my_photo.jpg" alt="An image of myself" width="250px">
-        </div>
-        <div id="about">
-            <p>As a 4th-year B.Tech student at Vellore Institute of Technology (VIT), specializing in Computer Science
-                and Engineering with a focus on AI and Robotics, I am passionate about creating innovative software
-                solutions, web applications, and intelligent systems. My academic and project experiences have equipped
-                me with a robust foundation in AI, robotics, and a diverse range of programming and development skills.
+        <div class="dummy"></div>
+        <div class="container my-5">
+            <div class="p-5 text-center bg-body-tertiary rounded-3">
+                <img class="d-block mx-auto mb-4" id="my_photo" src="images/my_photo.png" alt="myphoto" width="125">
 
-                I am proficient in several programming languages, including Python, C/C++, and Java, and have developed
-                expertise in web technologies like HTML, CSS, JavaScript, Node.js, and Express.js. My background in
-                machine learning allows me to build models that analyze data and make predictions, contributing to
-                smarter, more efficient applications.
-                I am keen on pursuing a career as a software developer, web developer, or machine learning engineer. My
-                goal is to apply my technical skills to develop cutting-edge applications and intelligent systems that
-                solve real-world problems and enhance user experiences. I am excited to join dynamic teams and work on
-                projects that push the boundaries of technology.
+                <h1 class="text-body-emphasis">Adwaith M Nambiar</h1>
+                <p class="lead">
+                    As a 4th-year B.Tech student at Vellore Institute of Technology (VIT), specializing
+                    in Computer Science
+                    and Engineering with a focus on AI and Robotics, I am passionate about creating innovative software
+                    solutions, web applications, and intelligent systems. My academic and project experiences have
+                    equipped
+                    me with a robust foundation in AI, robotics, and a diverse range of programming and development
+                    skills.
 
-                In my free time, I enjoy listening to music and going to the gym, which helps me stay balanced and
-                energized. Let’s connect to discuss potential collaborations, opportunities, or insights into the
-                exciting fields of software development, web development, and machine learning.</p>
+                    I am proficient in several programming languages, including Python, C/C++, and Java, and have
+                    developed
+                    expertise in web technologies like HTML, CSS, JavaScript, Node.js, and Express.js. My background in
+                    machine learning allows me to build models that analyze data and make predictions, contributing to
+                    smarter, more efficient applications.
+                    I am keen on pursuing a career as a software developer, web developer, or machine learning engineer.
+                    My
+                    goal is to apply my technical skills to develop cutting-edge applications and intelligent systems
+                    that
+                    solve real-world problems and enhance user experiences. I am excited to join dynamic teams and work
+                    on
+                    projects that push the boundaries of technology.
+
+                    In my free time, I enjoy listening to music and going to the gym, which helps me stay balanced and
+                    energized. Let’s connect to discuss potential collaborations, opportunities, or insights into the
+                    exciting fields of software development, web development, and machine learning.
+                </p>
+            </div>
         </div>
     </section>
-    <hr>
 
-    <section id="profiles">
-        <h2>Profiles</h2>
-        <ul>
-            <li><a href="https://github.com/mnadwaith" target="_blank">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/adwaith-m-nambiar-756451227/" target="_blank">LinkedIn</a></li>
-        </ul>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>C/C++</li>
-            <li>Java</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
+    <section id="certification">
+        <div class="container">
+            <h2 class="text-body-emphasis">Certification</h2>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="1000">
+                        <img src="images/c1.png" class="d-block w-100" alt="C1" height="490">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="images/c2.png" class="d-block w-100" alt="C2" height="490">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="1000">
+                        <img src="images/c3.png" class="d-block w-100" alt="C3" height="490">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="projects">
@@ -102,34 +149,29 @@
             <li>Coding</li>
         </ul>
     </section>
-
-    <section id="map">
-        <h2>Map</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d52583.60008594528!2d75.60265827360186!3d11.601986479302905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sen!2sin!4v1714500311882!5m2!1sen!2sin"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
     <section id="footer">
-        <div class="container">
+        <div class="container-fluid">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-              <div class="col-md-4 d-flex align-items-center">
-                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                  <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                </a>
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
-              </div>
-          
-              <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/mnadwaith" target="_blank"><img src="images/github.svg" alt="github"></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/instagram.svg" alt="instagram"></a></li>
-                <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/mnadwaith/"><img src="images/linkedin.svg" alt="linkedin"></use></svg></a></li>
-              </ul>
+                <div class="col-md-4 d-flex align-items-center">
+                    <span class="mb-3 mb-md-0 text-body-secondary">© Portfolio</span>
+                </div>
+
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <li class="ms-3"><a class="text-body-secondary" href="https://github.com/mnadwaith"
+                            target="_blank"><img src="images/github.svg" alt="github" height="30px"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/instagram.svg"
+                                alt="instagram" height="30px"></a></li>
+                    <li class="ms-3"><a class="text-body-secondary" href="https://www.linkedin.com/in/mnadwaith/"
+                            target="_blank"><img src="images/linkedin.svg" alt="linkedin" height="30px"></use></svg></a>
+                    </li>
+                </ul>
             </footer>
-          </div>
+        </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

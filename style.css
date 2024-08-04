@@ -1,0 +1,17 @@
+#my_photo{
+    border-radius: 50%;
+}
+
+.lead{
+    text-align: justify;
+}
+
+.dummy{
+    height: 45px;
+}
+
+@media (max-width:992px){
+    .dummy{
+        display: none;
+    }
+}
