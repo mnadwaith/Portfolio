@@ -26,3 +26,15 @@
     width: 3rem;
     height: 3rem;
 }
+
+.project-section {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.project-one {
+    background-color: #1a141413; /* Light gray background */
+}
+.project-two {
+    background-color: #3e3d3d13; /* Light gray background */
+}
