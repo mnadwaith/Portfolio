@@ -1,18 +1,28 @@
-#my_photo{
-    border-radius: 50%;
+#my_photo {
+    border-radius: 5%;
 }
 
-.lead{
+#me {
+    margin-top: 72px;
+    padding-bottom: 56px;
+}
+
+.lead {
     text-align: justify;
 }
 
-.dummy{
+.dummy {
     height: 45px;
 }
 
-@media (max-width:992px){
-    .dummy{
+@media (max-width:992px) {
+    .dummy {
         display: none;
+    }
+
+    #me {
+        margin-top: 0px;
+        padding-bottom: 56px;
     }
 }
 
@@ -33,8 +43,40 @@
 }
 
 .project-one {
-    background-color: #1a141413; /* Light gray background */
+    background-color: #1a141413;
+    /* Light gray background */
 }
+
 .project-two {
-    background-color: #3e3d3d13; /* Light gray background */
+    background-color: #3e3d3d13;
+    /* Light gray background */
+}
+
+
+.nav-link.active {
+    color: #007bff;
+    /* Example active color */
+    font-weight: bold;
+    /* Bold font for active link */
+}
+
+
+.custom-bg {
+    background-color: rgba(198, 204, 209, 0.8);
+    /* Dark color (rgb: 33, 37, 41) with 80% opacity */
+    z-index: 1030;
+    backdrop-filter: blur(10px);
+    /* Ensure navbar stays on top of other content */
+}
+
+html {
+    scroll-padding-top: 25px;
+    /* Adjust this to match the height of your navbar */
+}
+
+#me {
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

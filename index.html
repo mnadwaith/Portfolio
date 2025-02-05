@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,21 +12,25 @@
 </head>
 
 <body>
-    <div class="container-fluid fixed-top bg-dark-subtle d-none d-lg-block">
-        <header class="d-flex justify-content-center py-3">
+    <div class="container-fluid fixed-top custom-bg d-none d-lg-block">
+        <header class="d-flex justify-content-end py-3">
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="" class="nav-link active" aria-current="page">Home</a></li>
-                <li class="nav-item"><a href="#certification" class="nav-link">Certification</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Porjects</a></li>
+                <li class="nav-item"><a href="#me" class="nav-link" aria-current="page">About me</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
             </ul>
         </header>
     </div>
+
 
     <div class="container-fluid  bg-dark-subtle d-lg-none">
         <header class="d-flex justify-content-between align-items-center py-3">
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                    </svg></span>
             </button>
         </header>
     </div>
@@ -45,77 +49,41 @@
                                 d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
                         </svg>
                         Home</a></li>
-                <li class="nav-item"><a href="#certification" class="nav-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-award-fill" viewBox="0 0 16 16">
-                            <path
-                                d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z" />
-                            <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
-                        </svg>
-                        Certification</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Porjects</a></li>
             </ul>
         </div>
     </div>
 
+
     <section id="me">
-        <div class="dummy"></div>
-        <div class="container my-5">
-            <div class="p-5 text-center bg-body-tertiary rounded-3">
-                <img class="d-block mx-auto mb-4" id="my_photo" src="images/my_photo.jpg" alt="myphoto" width="125">
-
-                <h1 class="text-body-emphasis">Adwaith M Nambiar</h1>
-                <p class="lead">
-                    As a 4th-year B.Tech student at Vellore Institute of Technology (VIT), specializing
-                    in Computer Science
-                    and Engineering with a focus on AI and Robotics, I am passionate about creating innovative software
-                    solutions, web applications, and intelligent systems. My academic and project experiences have
-                    equipped
-                    me with a robust foundation in AI, robotics, and a diverse range of programming and development
-                    skills.
-
-                    I am proficient in several programming languages, including Python, C/C++, and Java, and have
-                    developed
-                    expertise in web technologies like HTML, CSS, JavaScript, Node.js, and Express.js. My background in
-                    machine learning allows me to build models that analyze data and make predictions, contributing to
-                    smarter, more efficient applications.
-                    I am keen on pursuing a career as a software developer, web developer, or machine learning engineer.
-                    My
-                    goal is to apply my technical skills to develop cutting-edge applications and intelligent systems
-                    that
-                    solve real-world problems and enhance user experiences. I am excited to join dynamic teams and work
-                    on
-                    projects that push the boundaries of technology.
-
-                    In my free time, I enjoy listening to music and going to the gym, which helps me stay balanced and
-                    energized. Let's connect to discuss potential collaborations, opportunities, or insights into the
-                    exciting fields of software development, web development, and machine learning.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <section id="certification">
-        <div class="container">
-            <h2 class="text-body-emphasis border-bottom">Certification</h2>
-            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="1000">
-                        <img src="images/c1.png" class="d-block w-100" alt="C1" height="490">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="1000">
-                        <img src="images/c2.png" class="d-block w-100" alt="C2" height="490">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="1000">
-                        <img src="images/c3.png" class="d-block w-100" alt="C3" height="490">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="images/my_photo.jpg" id="my_photo" class="d-block mx-lg-auto img-fluid" alt="My photo"
+                        width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Adwaith M Nambiar
+                    </h1>
+                    <p class="lead">I’m a Computer Science student specializing in AI and Robotics at VIT University.
+                        I’m passionate about building innovative web applications and data-driven solutions. With
+                        experience in full-stack development (MERN) and machine learning, I enjoy creating efficient,
+                        user-friendly products. Check out my projects to see how I blend technology and creativity!</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="https://drive.google.com/file/d/19_LDklD9Rru1dC8hXNfW080NvfQizHPu/view?usp=sharing"
+                            target="_blank" class="btn btn-primary btn-lg px-4 me-md-2">My
+                            Resume</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="about">
 
+    </section>
+
+    <section id="projects">
         <div class="container px-4 py-5">
             <h2 class="pb-2 border-bottom">Projects</h2>
 
@@ -342,10 +310,11 @@
         <div class="container-fluid">
             <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                 <div class="col-md-4 d-flex align-items-center">
-                    <span class="mb-3 mb-md-0 text-body-secondary">© Portfolio</span>
+                    <span class="mb-3 mb-md-0 text-body-secondary">Copyright © 2023 Adwaith M Nambiar.</span>
                 </div>
 
                 <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                    <span class="mb-3 mb-md-0">Contact Me:- </span>
                     <li class="ms-3"><a class="text-body-secondary" href="https://github.com/mnadwaith"
                             target="_blank"><img src="images/github.svg" alt="github" height="30px"></a></li>
                     <li class="ms-3"><a class="text-body-secondary" href="#"><img src="images/instagram.svg"
@@ -361,6 +330,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>
